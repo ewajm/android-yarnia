@@ -10,7 +10,7 @@ public class BrightnessUtils {
         int brightness = Brightness(backgroundColor);
         int myTextColor;
         if (brightness < 130)
-            myTextColor = Color.parseColor("#FFFFFF");
+            myTextColor = Color.parseColor("#cccccc");
         else
             myTextColor = Color.parseColor("#212121");
         return myTextColor;

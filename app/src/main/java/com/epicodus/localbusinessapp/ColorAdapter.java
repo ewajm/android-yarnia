@@ -54,8 +54,8 @@ public class ColorAdapter extends BaseAdapter{
         gridTextView.setGravity(Gravity.CENTER_HORIZONTAL);
         gridTextView.setTextColor(getTextColor(Color.parseColor(mColors[position])));
         GradientDrawable gd = new GradientDrawable();
-        gd.setColor(parseColor(mColors[position])); // Changes this drawbale to use a single color instead of a gradient
-        gd.setCornerRadius(5);
+        gd.setColor(parseColor(mColors[position])); // Changes this drawable to use a single color instead of a gradient
+        gd.setCornerRadius(10);
         gd.setStroke(1, 0xFF000000);
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN){
             gridTextView.setBackground(gd);
