@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.epicodus.localbusinessapp.MainActivity"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleImageView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/yarnia2"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Yarn Creation"
+        android:id="@+id/subHeadingView"
+        android:layout_below="@+id/titleImageView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fiberSpinner"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/fiberSpinnerLabel"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a fiber to get started:"
+        android:id="@+id/fiberSpinnerLabel"
+        android:textSize="20sp"
+        android:textIsSelectable="false"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Fiber"
+        android:id="@+id/selectFiberButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:typeface="serif"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>

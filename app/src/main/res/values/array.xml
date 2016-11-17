@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fibers">
+        <item>Acrylic</item>
+        <item>Alpaca</item>
+        <item>Bamboo</item>
+        <item>Cashmere</item>
+        <item>Cotton</item>
+        <item>Cotton/Rayon</item>
+        <item>Hemp</item>
+        <item>Linen</item>
+        <item>Lurex</item>
+        <item>Mercerized Cotton</item>
+        <item>Mohair</item>
+        <item>Rayon Boucle</item>
+        <item>Silk</item>
+        <item>Superwash Merino</item>
+        <item>Wool</item>
+        <item>Wool/Mohair Tweed</item>
+        <item>Rayon</item>
+        <item>Rayon/Lurex</item>
+        <item>Silk/Polyester</item>
+        <item>Wool/Nylon</item>
+        <item>Cotton/Linen</item>
+        <item>Bamboo Chenille</item>
+        <item>Polyester/Cotton/Lurex</item>
+    </string-array>
+</resources>
