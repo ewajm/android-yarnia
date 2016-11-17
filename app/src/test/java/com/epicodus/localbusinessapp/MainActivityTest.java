@@ -1,5 +1,6 @@
 package com.epicodus.localbusinessapp;
 
+import android.content.Intent;
 import android.os.Build;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -10,6 +11,7 @@ import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.annotation.Config;
+import org.robolectric.shadows.ShadowActivity;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;
@@ -33,5 +35,14 @@ public class MainActivityTest {
         Spinner fiberSpinner = (Spinner) activity.findViewById(R.id.fiberSpinner);
         String[] fiberArray = activity.getResources().getStringArray(R.array.fibers);
         assertEquals(fiberArray.length, fiberSpinner.getAdapter().getCount());
+    }
+
+    @Test
+    public void secondActivityStarted() {
+        activity.findViewById(R.id.selectFiberButton).performClick();
+        Intent expectedIntent = new Intent(activity, ColorActivity.class);
+        ShadowActivity shadowActivity = org.robolectric.Shadows.shadowOf(activity);
+        Intent actualIntent = shadowActivity.getNextStartedActivity();
+        assertTrue(actualIntent.filterEquals(expectedIntent));
     }
 }

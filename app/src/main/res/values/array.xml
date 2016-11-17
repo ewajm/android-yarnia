@@ -25,4 +25,21 @@
         <item>Bamboo Chenille</item>
         <item>Polyester/Cotton/Lurex</item>
     </string-array>
+    <string-array name="colors">
+        <item>red</item>
+        <item>blue</item>
+        <item>black</item>
+        <item>white</item>
+        <item>gray</item>
+        <item>aqua</item>
+        <item>fuchsia</item>
+        <item>yellow</item>
+        <item>lime</item>
+        <item>maroon</item>
+        <item>navy</item>
+        <item>olive</item>
+        <item>purple</item>
+        <item>silver</item>
+        <item>teal</item>
+    </string-array>
 </resources>
