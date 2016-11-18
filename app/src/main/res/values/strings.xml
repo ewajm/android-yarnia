@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Yarnia - CYOY</string>
+    <string name="yarnWeight">Current Yarn Weight: %s</string>
+    <string name="yarnPrice">Current Yarn Price: %s</string>
 </resources>
