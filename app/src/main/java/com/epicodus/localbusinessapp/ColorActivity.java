@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -43,6 +44,9 @@ public class ColorActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, YarnActivity.class);
                 startActivity(intent);
                 break;
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
             default:
                 break;
         }
@@ -55,7 +59,6 @@ public class ColorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_color);
         ButterKnife.bind(this);
-
         Intent parentIntent = getIntent();
         mFiber = parentIntent.getStringExtra("fiber");
         String[] colors = getResources().getStringArray(R.array.colors);
